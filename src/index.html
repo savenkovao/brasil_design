@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<div class="testp"> 
+	<div class="testp-1"> 
+		<a class="link" href="test-link1">Test link1</a> 
+	</div>
+</div> 
+
+
+
+<div class="testp"> 
+	<div class="testp-1"> 
+		<a class="link" href="test-link2">Test link1</a> 
+	</div>
+</div> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+		$('.testp').click(function() {
+	    $(this).toggleClass("classTestAdded");
+	  });
+
+	  $(".link").click(function(e) {
+		  e.preventDefault();
+		})
+
+
+	</script>
+	
+</body>
+</html>
